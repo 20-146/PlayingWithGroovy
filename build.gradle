@@ -1,0 +1,20 @@
+plugins {
+    id 'groovy'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.codehaus.groovy:groovy:2.5.5")
+    implementation("org.codehaus.groovy:groovy-xml:2.5.5")
+    implementation("org.apache.commons:commons-lang3:3.7")
+}
+
+test {
+    useJUnitPlatform()
+}
